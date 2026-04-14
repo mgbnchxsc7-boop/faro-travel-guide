@@ -11,13 +11,17 @@
 
 <header>
 <h1>Faro Travel Guide</h1>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="activities.html">Activities</a></li>
-<li><a href="food.html">Food</a></li>
-</ul>
-</nav>
+
+<input type="text" id="searchBar" placeholder="Search places in Faro...">
+
+<div>
+<button onclick="filterPlaces('all')">All</button>
+<button onclick="filterPlaces('beach')">Beaches</button>
+<button onclick="filterPlaces('food')">Food</button>
+<button onclick="filterPlaces('culture')">Culture</button>
+</div>
+
+<div id="placesContainer"></div>
 </header>
 
 <section class="hero">
